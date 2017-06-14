@@ -1,0 +1,54 @@
+@import 'variables';
+
+*{
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.background-philly{
+    background-image: url("../img/philly-2x-2.jpg");
+    background-size: cover;
+    height: 700px;
+}
+.headshot{
+    background-image: url("../img/michaelwiebe.jpg");
+    background-size: cover;
+    height: 400px;
+    width: 300px;
+    background-position-x: -19px;
+    margin: 100px 20px;
+}
+
+.basic-info{
+    width: 370px;
+    margin: 220px 20px;
+}
+.name{
+    font-family: $font-mont;
+    font-size: 50px;
+}
+.title{
+    font-family: $font-titillium;
+    font-size: 38px;
+}
+.skills{
+    font-family: $font-bubble;
+}
+.skill{
+    margin: 10px;
+}
+.work{
+    height: 400px;
+    background-color: rgb(53, 181, 158);
+}
+.background-philly2{
+    background-image: url('../img/philly-1x-1.jpg');
+    background-size: cover;
+    height: 400px;
+}
+.connect{
+    height: 600px;
+}
