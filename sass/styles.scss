@@ -25,6 +25,7 @@
 .basic-info{
     width: 370px;
     margin: 220px 20px;
+    text-shadow: 2px 2px antiquewhite;
 }
 .name{
     font-family: $font-mont;
@@ -36,9 +37,23 @@
 }
 .skills{
     font-family: $font-bubble;
+    height: 300px;
+    text-align: center;
+    justify-content: space-around;
+    padding: 20px 75px;
 }
 .skill{
     margin: 10px;
+}
+.skill ul{
+    list-style-type: none;
+    font-size: 35px;
+}
+.languages{
+}
+.frameworks{
+}
+.other{
 }
 .work{
     height: 400px;
