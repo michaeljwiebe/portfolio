@@ -35,6 +35,15 @@
     font-family: $font-titillium;
     font-size: 38px;
 }
+.text-box{
+    background-color: rgba(0,0,0, .4);
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0 0 3px 4px white;
+}
+.text-box li{
+    text-shadow: 2px 2px white;
+}
 .skills{
     font-family: $font-bubble;
     height: 300px;
@@ -58,12 +67,24 @@
 .work{
     height: 400px;
     background-color: rgb(53, 181, 158);
+    text-align: center;
+}
+.section-title{
+    width: 100%;
+}
+.project-box{
+    width: 300px;
+    height: 500px;
+    margin: 0 auto;
+}
+.project-description li{
+    font-size: 16px;
 }
 .background-philly2{
     background-image: url('../img/philly-1x-1.jpg');
     background-size: cover;
-    height: 400px;
+    height: 600px;
 }
 .connect{
-    height: 600px;
+    height: 200px;
 }
