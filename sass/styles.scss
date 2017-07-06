@@ -1,18 +1,39 @@
+
+//UX
+//make boxes appropriate size for content
+//add JS hover box-shadow growth or 3D
+//parallax scrolling for images
+//add gif videos of each project
+//add bike animation, fade in contact icons on scroll after animation
+
 @import 'variables';
 
 *{
     box-sizing: border-box;
 }
+
 .flex{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
+a{
+    text-decoration: none;
+}
+
 .background-philly{
     background-image: url("../img/philly-2x-2.jpg");
     background-size: cover;
     height: 700px;
 }
+
+.background-philly2{
+    background-image: url('../img/philly-1x-1.jpg');
+    background-size: cover;
+    height: 600px;
+}
+
 .headshot{
     background-image: url("../img/michaelwiebe.jpg");
     background-size: cover;
@@ -27,23 +48,39 @@
     margin: 220px 20px;
     text-shadow: 2px 2px antiquewhite;
 }
+
 .name{
     font-family: $font-mont;
     font-size: 50px;
 }
+
 .title{
     font-family: $font-titillium;
     font-size: 38px;
 }
+
 .text-box{
+    padding: 20px;
+    max-width: 300px;
+    min-width: 200px;
+    text-align: center;
     background-color: rgba(0,0,0, .4);
     border: 1px solid black;
     border-radius: 8px;
     box-shadow: 0 0 3px 4px white;
+    color: #f7f7f7;
+    text-shadow: 1px 1px black;
 }
+
 .text-box li{
-    text-shadow: 2px 2px white;
+
 }
+
+.text-box ul{
+    list-style-type: none;
+    padding: 0;
+}
+
 .skills{
     font-family: $font-bubble;
     height: 300px;
@@ -51,40 +88,61 @@
     justify-content: space-around;
     padding: 20px 75px;
 }
-.skill{
-    margin: 10px;
-}
+
+.skill{}
+
 .skill ul{
-    list-style-type: none;
     font-size: 35px;
 }
+
 .languages{
 }
+
 .frameworks{
 }
+
 .other{
 }
+
 .work{
     height: 400px;
     background-color: rgb(53, 181, 158);
     text-align: center;
 }
+
 .section-title{
     width: 100%;
 }
+
 .project-box{
     width: 300px;
     height: 500px;
     margin: 0 auto;
 }
+
 .project-description li{
-    font-size: 16px;
+    font-size: 22px;
 }
-.background-philly2{
-    background-image: url('../img/philly-1x-1.jpg');
-    background-size: cover;
-    height: 600px;
+.project-links{
 }
+.project-link{
+    font-size: 20px;
+    color: #f7f7f7;
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.project-link-live{}
+.project-link-frontend{}
+.project-link-backend{}
+
 .connect{
+    text-align: center;
     height: 200px;
+}
+
+.connect a{
+    font-size: 100px;
+    margin: 30px;
 }

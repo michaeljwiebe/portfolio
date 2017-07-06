@@ -6,10 +6,18 @@
   flex-wrap: wrap;
   justify-content: center; }
 
+a {
+  text-decoration: none; }
+
 .background-philly {
   background-image: url("../img/philly-2x-2.jpg");
   background-size: cover;
   height: 700px; }
+
+.background-philly2 {
+  background-image: url("../img/philly-1x-1.jpg");
+  background-size: cover;
+  height: 600px; }
 
 .headshot {
   background-image: url("../img/michaelwiebe.jpg");
@@ -33,13 +41,20 @@
   font-size: 38px; }
 
 .text-box {
+  padding: 20px;
+  max-width: 300px;
+  min-width: 200px;
+  text-align: center;
   background-color: rgba(0, 0, 0, 0.4);
   border: 1px solid black;
   border-radius: 8px;
-  box-shadow: 0 0 3px 4px white; }
+  box-shadow: 0 0 3px 4px white;
+  color: #f7f7f7;
+  text-shadow: 1px 1px black; }
 
-.text-box li {
-  text-shadow: 2px 2px white; }
+.text-box ul {
+  list-style-type: none;
+  padding: 0; }
 
 .skills {
   font-family: "Bubbler One", sans-serif;
@@ -48,11 +63,7 @@
   justify-content: space-around;
   padding: 20px 75px; }
 
-.skill {
-  margin: 10px; }
-
 .skill ul {
-  list-style-type: none;
   font-size: 35px; }
 
 .work {
@@ -69,14 +80,21 @@
   margin: 0 auto; }
 
 .project-description li {
-  font-size: 16px; }
+  font-size: 22px; }
 
-.background-philly2 {
-  background-image: url("../img/philly-1x-1.jpg");
-  background-size: cover;
-  height: 600px; }
+.project-link {
+  font-size: 20px;
+  color: #f7f7f7;
+  text-shadow: 2px 2px black;
+  text-decoration: none;
+  margin: 5px; }
 
 .connect {
+  text-align: center;
   height: 200px; }
+
+.connect a {
+  font-size: 100px;
+  margin: 30px; }
 
 /*# sourceMappingURL=styles.css.map */
