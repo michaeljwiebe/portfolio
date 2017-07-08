@@ -120,21 +120,29 @@ a{
     margin: 0 auto;
 }
 
+.project-description{
+    min-height: 180px;
+}
+
 .project-description li{
     font-size: 22px;
 }
+
 .project-links{
 }
+
 .project-link{
     font-size: 20px;
     color: #f7f7f7;
     text-shadow: 2px 2px black;
     text-decoration: none;
-    margin: 5px;
+    margin: 19px;
 }
 
 .project-link-live{}
+
 .project-link-frontend{}
+
 .project-link-backend{}
 
 .connect{

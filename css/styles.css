@@ -79,6 +79,9 @@ a {
   height: 500px;
   margin: 0 auto; }
 
+.project-description {
+  min-height: 180px; }
+
 .project-description li {
   font-size: 22px; }
 
@@ -87,7 +90,7 @@ a {
   color: #f7f7f7;
   text-shadow: 2px 2px black;
   text-decoration: none;
-  margin: 5px; }
+  margin: 19px; }
 
 .connect {
   text-align: center;
