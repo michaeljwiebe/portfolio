@@ -3,6 +3,7 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
 	<script src="https://use.fontawesome.com/7a0beaf8bc.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Bubbler+One|Montserrat:300i,400,500|Titillium+Web:400,600" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,14 +11,26 @@
 </head>
 <body>
 	<div class="background-philly">
-		<div class="flex">
+		<div class="flex bio-info">
 			<div class="headshot"></div>
 			<div class="basic-info">
-				<div class="name">Michael Wiebe</div>
-				<div class="title">Jr. Front End Developer</div>
+				<div class="name">
+					<span class="first-name">
+						<span class="first-name-letter name-first-letter">M</span>
+						ichael
+					</span>
+					<span class="last-name">
+						<span class="last-name-letter name-first-letter">W</span>
+						iebe
+					</span>
+				</div>
+				<div class="title">Jr. Front End
+					<span class="title-end">Developer</span>
+				</div>
 			</div>
 		</div>
 		<div class="skills flex">
+			<div class="section-title">My Skills</div>
 			<div class="text-box skill languages">
 				<ul>
 					<li>Javascript</li>
@@ -29,8 +42,8 @@
 			</div>
 			<div class="text-box skill frameworks">
 				<ul>
-					<li>React</li>
-					<li>Rails</li>
+					<li>React.js</li>
+					<li>Ruby on Rails</li>
 					<li>Sinatra</li>
 				</ul>
 			</div>
@@ -46,100 +59,112 @@
 		</div>
 	</div>
 	<div class="work background-philly2 flex">
-		<div class="section-title">My Work</div>
-		<div class="projects flex">
-			<div class="text-box project-box">
-				<h3>CarBuddy</h3>
-				<div>
-					<ul class="project-description">
-						<li>React and Rails</li>
-						<li>Mobile web app for renting personal cars</li>
-						<li>4 database tables</li>
-						<li>10 components</li>
-						<li>15 API calls</li>
-						<li>paperclip gem</li>
-						<li>AWS</li>
-						<li>Google Maps</li>
-					</ul>
-					<div>View:
-						<ul class="project-links flex">
-							<li>
-								<a class="project-link project-link-live" href="http://michaeljwiebe.github.io/CarBuddy-frontend">
-									Live
-								</a>
-							</li>
-							<li>
-								<a class="project-link" href="http://github.com/michaeljwiebe/carbuddy-frontend">
-									Frontend</i>
-								</a>
-							</li>
-							<li>
-								<a class="project-link" href="http://github.com/michaeljwiebe/carbuddy-backend">
-									Backend</i>
-								</a>
-							</li>
-						</ul>
+		<div class="projects-container">
+			<div class="section-title">My Work</div>
+				<div class="projects flex">
+					<div class="text-box project-box">
+						<h3>CarBuddy</h3>
+						<div>
+							<ul class="project-description">
+								<li>React and Rails</li>
+								<li>Mobile web app</li>
+								<li>Rent personal cars</li>
+								<li>4 database tables</li>
+								<li>10 components</li>
+								<li>15 API calls</li>
+								<li>paperclip gem</li>
+								<li>AWS</li>
+								<li>Google Maps</li>
+							</ul>
+							<div>View:
+								<ul class="project-links flex">
+									<li>
+										<a class="project-link project-link-live" href="http://michaeljwiebe.github.io/CarBuddy-frontend">
+											Live
+										</a>
+									</li>
+									<li>
+										<a class="project-link" href="http://github.com/michaeljwiebe/carbuddy-frontend">
+											Frontend</i>
+										</a>
+									</li>
+									<li>
+										<a class="project-link" href="http://github.com/michaeljwiebe/carbuddy-backend">
+											Backend</i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="text-box project-box">
+						<h3>Hangman</h3>
+						<div>
+							<ul class="project-description">
+								<li>Vanilla Javascript</li>
+								<li>2 player</li>
+								<li>Multiple rounds</li>
+							</ul>
+							<div>
+								View:
+								<ul class="project-links flex">
+									<li>
+										<a class="project-link" href="http://michaeljwiebe.github.io/Hangman">
+											Live
+										</a>
+									</li>
+									<li>
+										<a class="project-link" href="http://github.com/michaeljwiebe/Hangman">
+											Code
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="text-box project-box">
+						<h3>Photosite</h3>
+						<div>
+							<ul class="project-description">
+								<li>Vanilla Javascript</li>
+								<li>Version 5</li>
+								<li>Side project</li>
+							</ul>
+							<div>
+								View:
+								<ul class="project-links flex">
+									<li>
+										<a class="project-link" href="http://www.michaelwiebe.net/photography">
+											Live
+										</a>
+									</li>
+									<li>
+										<a class="project-link" href="https://github.com/michaeljwiebe/photosite-version-5">
+											Code
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="text-box project-box">
-				<h3>Hangman</h3>
-				<div>
-					<ul class="project-description">
-						<li>Vanilla Javascript</li>
-						<li>Adaptation of hangman</li>
-						<li>2 player</li>
-						<li>Multiple rounds</li>
-					</ul>
-					<div>
-						View:
-						<ul class="project-links flex">
-							<li>
-								<a class="project-link" href="http://michaeljwiebe.github.io/Hangman">
-									Live
-								</a>
-							</li>
-							<li>
-								<a class="project-link" href="http://github.com/michaeljwiebe/Hangman">
-									Code
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="text-box project-box">
-				<h3>Photosite</h3>
-				<div>
-					<ul class="project-description">
-						<li>Vanilla Javascript</li>
-						<li>Version 5</li>
-						<li>A side project, I'm a hobby photographer.</li>
-					</ul>
-					<div>
-						View:
-						<ul class="project-links flex">
-							<li>
-								<a class="project-link" href="http://www.michaelwiebe.net/photography">
-									Live
-								</a>
-							</li>
-							<li>
-								<a class="project-link" href="https://github.com/michaeljwiebe/photosite-version-5">
-									Code
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
 		<div class="connect flex">
 			<div class="section-title">Connect!</div>
 			<div class="links flex">
-			<a href="http://www.github.com/michaeljwiebe"><i class="fa fa-github-square" aria-hidden="true"></i></a>
-			<a href="http://www.linkedin.com/in/michaeljwiebe"><i class="fa fa-linkedin-square blue-and-white-icon" aria-hidden="true"></i></a>
-			<a href="http://www.facebook.com/m.weebs"><i class="fa fa-facebook-official blue-and-white-icon" aria-hidden="true"></i></a>
+			<a href="http://www.github.com/michaeljwiebe">
+				<i class="fa fa-github-square" aria-hidden="true"></i>
+			</a>
+			<a href="http://www.linkedin.com/in/michaeljwiebe">
+				<i class="fa fa-linkedin-square blue-and-white-icon" aria-hidden="true"></i>
+			</a>
+			<a href="http://www.facebook.com/m.weebs">
+				<i class="fa fa-facebook-official blue-and-white-icon" aria-hidden="true"></i>
+			</a>
+			<a href="mailto:wiebe.michael.j@gmail.com">
+				<i class="fa fa-envelope" aria-hidden="true"></i>
+			</a>
+
 		</div>
 	</div>
 	<script type="text/javascript" src="scripts.js"></script>

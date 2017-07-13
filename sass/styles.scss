@@ -1,5 +1,10 @@
+//challenges, little story
+//system for building in react
+//next steps
+
 //UI
 //make it responsive, 3 breaks
+//smaller fonts generally
 
 
 //UX
@@ -17,6 +22,7 @@
 
 body{
     margin: 0;
+    font-family: $font-bubble;
 }
 
 .flex{
@@ -32,7 +38,7 @@ a{
 .background-philly{
     background-image: url("../img/philly-2x-2.jpg");
     background-size: cover;
-    height: 1000px;
+    height: 850px;
 }
 
 .background-philly2{
@@ -47,18 +53,22 @@ a{
     height: 400px;
     width: 300px;
     background-position-x: -19px;
-    margin: 100px 20px;
+    margin: 100px 20px 0;
+    border: 2px solid white;
 }
 
 .basic-info{
-    width: 370px;
     margin: 220px 20px;
-    text-shadow: 2px 2px antiquewhite;
+    text-shadow: -2px 2px antiquewhite;
 }
 
 .name{
     font-family: $font-mont;
     font-size: 50px;
+}
+
+.name-first-letter{
+    letter-spacing: -13px;
 }
 
 .title{
@@ -67,9 +77,6 @@ a{
 }
 
 .text-box{
-    padding: 20px;
-    max-width: 300px;
-    min-width: 200px;
     text-align: center;
     background-color: $box-bg;
     border: 1px solid black;
@@ -86,19 +93,23 @@ a{
 .text-box ul{
     list-style-type: none;
     padding: 0;
+    margin-bottom: 0;
 }
 
 .skills{
-    font-family: $font-bubble;
     height: 245px;
     text-align: center;
-    justify-content: space-around;
 }
 
-.skill{}
+.skill{
+    font-size: 24px;
+    margin: 10px 8px;
+    padding: 5px;
+    max-width: 300px;
+    min-width: 165px;
+}
 
 .skill ul{
-    font-size: 35px;
     margin: 0;
 }
 
@@ -118,22 +129,28 @@ a{
 .section-title{
     font-size: 30px;
     height: 58px;
-    width: 145px;
+    min-width: 145px;
     color: black;
     border-radius: 10px;
     background-color: rgba(236, 236, 236, 0.9);
-    margin: 40px 30vw 10px 30vw;
+    margin: 40px 40vw 10px;
     padding: 12px;
 }
 
-.projects{
+.projects-container{
     width: 100%;
+    margin-top: 40px;
+}
+
+.projects{
+    margin-top: 10px;
 }
 
 .project-box{
-    width: 300px;
-    height: 440px;
-    margin: 15px;
+    width: 250px;
+    height: 430px;
+    margin: 10px;
+    padding: 17px;
 }
 
 .project-description{
@@ -146,6 +163,8 @@ a{
 }
 
 .project-links{
+    line-height: 43px;
+    margin-top: 0;
 }
 
 .project-link{
@@ -158,6 +177,30 @@ a{
     border: 1px solid white;
     border-radius: 10px;
     padding: 8px;
+}
+
+.project-link-animation{
+    animation: flashbox 1s infinite;
+}
+
+@keyframes flashbox{
+    0%{
+        color: white;
+        border: 1px solid white;
+    }
+    50%{
+        color: red;
+        border: 1px solid red;
+    }
+    100%{
+        color: white;
+        border: 1px solid white;
+    }
+}
+
+.project-link:hover{
+    color: red;
+    border: 1px solid red;
 }
 
 .project-link-live{}
@@ -177,7 +220,7 @@ a{
 
 .connect a{
     font-size: 100px;
-    margin: 30px;
+    margin: 10px;
     width: 110px;
     height: 110px;
     background-color: white;
@@ -188,6 +231,125 @@ a{
     color: blue;
 }
 
-@media all and (min-width: 666px){
+@media all and (max-width: 810px){
+    .bio-info{
+        justify-content: space-around;
+    }
+    .headshot{
+        height: 300px;
+        width: 250px;
+        background-position-x: -19px;
+        margin: 50px 0 0 20px;
+    }
+    .basic-info{
+        margin: 67px 0 0 0;
+        width: 300px;
+    }
+    .name{
+        font-size: 42px;
+        width: 400px;
+        margin-left: 10px;
+        line-height: 70px;
+        font-family: $font-cabin;
+    }
+    .first-name{
+        letter-spacing: 6px;
+        margin-right: 20%;
+    }
+    .last-name{
+        width: 80%;
+        text-transform: uppercase;
+        margin-left: 9px;
+        letter-spacing: 9px;
+    }
+    .first-name-letter{
+        font-size: 123px;
+        letter-spacing: -18px;
+    }
+    .last-name-letter{
+        font-size: 110px;
+        letter-spacing: -23px;
+    }
+    .title{
+        font-size: 25px;
+        background-color: #f7f7f7;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 260px;
+        text-align: center;
+        margin-left: 12px;
+        margin-top: 36px;
+    }
+}
 
+@media all and (min-width: 620px) and (max-width: 810px){
+
+    .skills{
+        margin: 50px 0;
+    }
+    .skill{
+        height: 200px;
+        line-height: 38px;
+    }
+    .project-box{
+        width: 200px;
+        height: 430px;
+        margin: 0.5vw;
+        padding: 17px;
+    }
+}
+
+@media all and (max-width: 619px){
+    .headshot{
+        height: 200px;
+        width: 150px;
+        margin-left: 0;
+    }
+    .basic-info{
+        margin: 82px 0 0 0;
+        width: 150px;
+    }
+    .name{
+        font-size: 20px;
+        margin-left: 5px;
+        line-height: 33px;
+    }
+    .first-name{
+        letter-spacing: 3px;
+        margin-right: 50%;
+    }
+    .first-name-letter{
+        font-size: 88px;
+        letter-spacing: -6px;
+    }
+    .last-name{
+        width: 80%;
+        text-transform: uppercase;
+        margin-left: 6px;
+        letter-spacing: 9px;
+    }
+    .last-name-letter{
+        font-size: 64px;
+        letter-spacing: -13px;
+    }
+    .title{
+        font-size: 20px;
+        background-color: #f7f7f7;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 130px;
+        text-align: center;
+        margin-left: 12px;
+        margin-top: 0;
+    }
+    .title-end{
+        display: block;
+    }
+    .skill{
+        display: block;
+    }
+    .project-box{
+        width: 300px;
+        display: block;
+    }
 }
