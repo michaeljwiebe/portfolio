@@ -1,7 +1,3 @@
-//challenges, little story
-//system for building in react
-//next steps
-
 //UI
 //make it responsive, 3 breaks
 //smaller fonts generally
@@ -73,7 +69,11 @@ a{
 
 .title{
     font-family: $font-titillium;
-    font-size: 38px;
+    font-size: 30px;
+    text-align: center;
+    background-color: $bg-transparent-white;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 .text-box{
@@ -132,14 +132,15 @@ a{
     min-width: 145px;
     color: black;
     border-radius: 10px;
-    background-color: rgba(236, 236, 236, 0.9);
-    margin: 40px 40vw 10px;
+    background-color: $bg-transparent-white;
+    margin: 40px 45vw 10px;
     padding: 12px;
 }
 
 .projects-container{
     width: 100%;
     margin-top: 40px;
+    margin-bottom: -100px;
 }
 
 .projects{
@@ -151,6 +152,12 @@ a{
     height: 430px;
     margin: 10px;
     padding: 17px;
+}
+
+.project-box h3{
+    font-size: 26px;
+    text-decoration: underline;
+    margin: 0px;
 }
 
 .project-description{
@@ -223,7 +230,7 @@ a{
     margin: 10px;
     width: 110px;
     height: 110px;
-    background-color: white;
+    background-color: $bg-transparent-white;
     border-radius: 10px;
 }
 
@@ -242,28 +249,27 @@ a{
         margin: 50px 0 0 20px;
     }
     .basic-info{
-        margin: 67px 0 0 0;
+        margin: 95px 0 0 0;
         width: 300px;
     }
     .name{
         font-size: 42px;
-        width: 400px;
         margin-left: 10px;
-        line-height: 70px;
+        line-height: 60px;
         font-family: $font-cabin;
     }
     .first-name{
-        letter-spacing: 6px;
+        letter-spacing: 5px;
         margin-right: 20%;
     }
     .last-name{
         width: 80%;
         text-transform: uppercase;
         margin-left: 9px;
-        letter-spacing: 9px;
+        letter-spacing: 17px;
     }
     .first-name-letter{
-        font-size: 123px;
+        font-size: 155px;
         letter-spacing: -18px;
     }
     .last-name-letter{
@@ -272,9 +278,6 @@ a{
     }
     .title{
         font-size: 25px;
-        background-color: #f7f7f7;
-        border: 1px solid black;
-        border-radius: 5px;
         width: 260px;
         text-align: center;
         margin-left: 12px;
@@ -334,9 +337,6 @@ a{
     }
     .title{
         font-size: 20px;
-        background-color: #f7f7f7;
-        border: 1px solid black;
-        border-radius: 5px;
         width: 130px;
         text-align: center;
         margin-left: 12px;
@@ -348,8 +348,19 @@ a{
     .skill{
         display: block;
     }
+
+    .background-philly2{
+        background-image: url('../img/philly-4x-tall-1-2.jpg');
+        height: 2000px;
+    }
+
     .project-box{
         width: 300px;
+        height: auto;
         display: block;
+    }
+
+    .project-description{
+        min-height: 75px;
     }
 }
