@@ -1,16 +1,5 @@
-//UI
-//make it responsive, 3 breaks
-//smaller fonts generally
-
-
-//UX
-//make boxes appropriate size for content
-//add JS hover box-shadow growth or 3D
-//parallax scrolling for images
-//add gif videos of each project
-//add bike animation, fade in contact icons on scroll after animation
-
 @import 'variables';
+@import 'skills';
 
 *{
     box-sizing: border-box;
@@ -94,32 +83,6 @@ a{
     list-style-type: none;
     padding: 0;
     margin-bottom: 0;
-}
-
-.skills{
-    height: 245px;
-    text-align: center;
-}
-
-.skill{
-    font-size: 24px;
-    margin: 10px 8px;
-    padding: 5px;
-    max-width: 300px;
-    min-width: 165px;
-}
-
-.skill ul{
-    margin: 0;
-}
-
-.languages{
-}
-
-.frameworks{
-}
-
-.other{
 }
 
 .work{
@@ -343,9 +306,6 @@ a{
         margin-top: 0;
     }
     .title-end{
-        display: block;
-    }
-    .skill{
         display: block;
     }
 
