@@ -97,32 +97,6 @@ a{
     margin-bottom: 0;
 }
 
-.skills{
-    height: 245px;
-    text-align: center;
-}
-
-.skill{
-    font-size: 24px;
-    margin: 10px 8px;
-    padding: 5px;
-    max-width: 300px;
-    min-width: 165px;
-}
-
-.skill ul{
-    margin: 0;
-}
-
-.languages{
-}
-
-.frameworks{
-}
-
-.other{
-}
-
 .work{
     text-align: center;
 }
@@ -287,14 +261,6 @@ a{
 }
 
 @media all and (min-width: 620px) and (max-width: 810px){
-
-    .skills{
-        margin: 50px 0;
-    }
-    .skill{
-        height: 200px;
-        line-height: 38px;
-    }
     .project-box{
         width: 200px;
         height: 430px;
@@ -344,9 +310,6 @@ a{
         margin-top: 0;
     }
     .title-end{
-        display: block;
-    }
-    .skill{
         display: block;
     }
 
