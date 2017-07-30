@@ -118,7 +118,7 @@ a {
 .text-box ul {
   list-style-type: none;
   padding: 0;
-  margin-bottom: 0; }
+  margin-bottom: 15px; }
 
 .work {
   text-align: center; }
@@ -143,14 +143,15 @@ a {
 
 .project-box {
   width: 250px;
-  height: 430px;
+  height: 450px;
   margin: 10px;
   padding: 17px; }
 
 .project-box h3 {
   font-size: 26px;
   text-decoration: underline;
-  margin: 0px; }
+  margin: 0px;
+  height: 45px; }
 
 .project-description {
   min-height: 240px;
@@ -257,7 +258,6 @@ a {
 @media all and (min-width: 650px) and (max-width: 830px) {
   .project-box {
     width: 200px;
-    height: 430px;
     margin: 0.5vw;
     padding: 17px; } }
 @media all and (max-width: 649px) {
@@ -317,7 +317,8 @@ a {
   .project-box {
     width: 300px;
     height: auto;
-    display: block; }
+    display: block;
+    min-height: 260px; }
 
   .project-description {
     min-height: 75px; } }
