@@ -1,4 +1,23 @@
 /*
+*  Bio picture, name, sectiontitle fadein
+**/
+var bioInfo = document.getElementsByClassName("bio-info")[0];
+var sectionTitles = document.getElementsByClassName("section-title");
+function initialFadeIn(){
+	setTimeout(function(){bioInfo.classList.add('visible')}, 500);
+	setTimeout(function(){
+		[].forEach.call(sectionTitles, function(title){
+			title.classList.add("visible")
+		})
+	}, 1000)
+
+}
+
+window.onload = initialFadeIn;
+
+
+
+/*
 *  Links flashing red
 **/
 var projectLinks = document.getElementsByClassName("project-link");
@@ -26,9 +45,10 @@ var skillContainers = document.getElementsByClassName("skill-container");
 		skillCategories[index].classList.remove("skill-category-overlay");
 		skillsLists[index].classList.remove("fade-out");
 	});
-	/*
-	*  Skill container fade in
-	**/
+
+/*
+*  Skill container fade in
+**/
 	var skillContainerPosition = skillContainers[index].getBoundingClientRect();
 	window.addEventListener("scroll", () =>{
 		skillFadeIn(skillContainerPosition.bottom, index)
@@ -48,11 +68,10 @@ function skillFadeIn(skillBottom, index) {
 var projectContainers = document.getElementsByClassName("project-container");
 [].forEach.call(projectContainers, function(project, index) {
 	var projectContainerPosition = projectContainers[index].getBoundingClientRect();
-	console.log("project pos");
 
 	window.addEventListener("scroll", () =>{
-		if((window.innerHeight + window.scrollY) > projectContainerPosition.bottom){
-			setTimeout(() => projectContainers[index].classList.add("fade-in"), (index+1)*1000);
+		if((window.innerHeight + window.scrollY) > (projectContainerPosition.bottom - 300)){
+			setTimeout(() => projectContainers[index].classList.add("fade-in"), (index)*1000);
 		}
 	})
 })

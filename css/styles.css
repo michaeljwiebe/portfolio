@@ -2,8 +2,8 @@
   width: 100%;
   margin-top: 40px; }
 
-.projects {
-  margin-top: 10px; }
+.project-boxes {
+  margin-top: 50px; }
 
 .project-container {
   opacity: 0;
@@ -64,6 +64,9 @@
 
 .skills-list {
   margin: 0; }
+
+.skills-boxes {
+  margin-top: 50px; }
 
 .skill-container {
   opacity: 0;
@@ -140,6 +143,10 @@ a {
   background-size: cover;
   height: 1000px; }
 
+.bio-info {
+  opacity: 0;
+  transition: 0.5s; }
+
 .headshot {
   background-image: url("../img/michaelwiebe.jpg");
   background-size: cover;
@@ -194,7 +201,9 @@ a {
   border-bottom: 1px solid black;
   background-color: rgba(236, 236, 236, 0.9);
   margin: 40px 0 10px;
-  padding: 12px; }
+  padding: 12px;
+  opacity: 0;
+  transition: 0.5s; }
 
 .connect {
   text-align: center;
@@ -329,5 +338,7 @@ a {
 @media all and (max-width: 377px) {
   .background-philly {
     height: 1100px; } }
+.visible {
+  opacity: 1; }
 
 /*# sourceMappingURL=styles.css.map */
