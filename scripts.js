@@ -9,7 +9,7 @@ function initialFadeIn(){
 		[].forEach.call(sectionTitles, function(title){
 			title.classList.add("visible")
 		})
-	}, 1000)
+	}, 1500)
 
 }
 
@@ -58,7 +58,7 @@ var skillContainers = document.getElementsByClassName("skill-container");
 
 function skillFadeIn(skillBottom, index) {
 	if ((window.innerHeight + window.scrollY) > skillBottom || window.innerHeight > 680){
-		setTimeout(() => skillContainers[index].classList.add("fade-in"), (index+1)*1000);
+		setTimeout(() => skillContainers[index].classList.add("fade-in"), (index+2)*1200);
 	}
 }
 

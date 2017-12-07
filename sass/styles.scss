@@ -104,7 +104,6 @@ a{
 .text-box ul{
     list-style-type: none;
     padding: 0;
-    margin-bottom: 15px;
 }
 
 .work{
@@ -142,6 +141,10 @@ a{
     height: 110px;
     background-color: $bg-transparent-white;
     border-radius: 10px;
+    transition: 0.2s;
+}
+.connect a:hover{
+    box-shadow: 5px 5px blue;
 }
 
 .blue-and-white-icon{
